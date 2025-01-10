@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>CGPA Converter</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="contents">
+        <h1 class="wlcm">
+          Assalamu alaikum <br />
+          <span>Future <span class="nurses">Nurses</span>!</span>
+        </h1>
+        <form>
+          <h1 class="heading">Convert your marks to <span>CGPA</span></h1>
+          <div class="data">
+            <!-- Subject Name -->
+            <div class="subName">
+              <label for="sub1">Health Assessment:</label><br />
+              <label for="sub2">Nutrition:</label><br />
+              <label for="sub3">Pediatric:</label><br />
+              <label for="sub4">Medical & Surigcal:</label><br />
+              <label for="sub5">Pharmacology:</label><br />
+              <label for="sub6">Orthopedic:</label><br />
+            </div>
+            <!-- Subject Mark -->
+            <div class="subMark">
+              <input
+                type="number"
+                id="sub1"
+                min="1"
+                max="150"
+                step="1"
+                placeholder="1-150"
+                required
+              /><br />
+              <input
+                type="number"
+                id="sub2"
+                min="1"
+                max="150"
+                step="1"
+                placeholder="1-150"
+                required
+              /><br />
+              <input
+                type="number"
+                id="sub3"
+                min="1"
+                max="200"
+                placeholder="1-200"
+                step="1"
+                required
+              /><br />
+              <input
+                type="number"
+                id="sub4"
+                min="1"
+                max="200"
+                step="1"
+                placeholder="1-200"
+                required
+              /><br />
+              <input
+                type="number"
+                id="sub5"
+                min="1"
+                max="100"
+                step="1"
+                placeholder="1-100"
+                required
+              /><br />
+              <input
+                type="number"
+                id="sub6"
+                min="1"
+                max="200"
+                step="1"
+                placeholder="1-200"
+                required
+              /><br />
+            </div>
+          </div>
+          <h3 id="note"></h3>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+      <!-- result -->
+      <div class="results">
+        <h1 class="heading">Congratulations!</h1>
+        <h1 class="subHead">Here are your shining results.</h1>
+        <!-- result data -->
+        <div class="data">
+          <div class="subName">
+            <h2 class="head">Subjects</h2>
+            <h2>Health Assessment</h2>
+            <h2>Nutrition</h2>
+            <h2>Pediatric</h2>
+            <h2>Medical & Surigcal</h2>
+            <h2>Pharmacology</h2>
+            <h2>Orthopedic</h2>
+          </div>
+          <div class="marks">
+            <h2 class="head">Marks</h2>
+            <h2 class="mark 1">1</h2>
+            <h2 class="mark 2">2</h2>
+            <h2 class="mark 3">3</h2>
+            <h2 class="mark 4">4</h2>
+            <h2 class="mark 5">5</h2>
+            <h2 class="mark 6">6</h2>
+          </div>
+          <div class="numGrade">
+            <h2 class="head">Points</h2>
+            <h2 class="point1"></h2>
+            <h2 class="point2"></h2>
+            <h2 class="point3"></h2>
+            <h2 class="point4"></h2>
+            <h2 class="point5"></h2>
+            <h2 class="point6"></h2>
+          </div>
+          <div class="letGrade">
+            <h2 class="head">Grades</h2>
+            <h2 class="grade1">X</h2>
+            <h2 class="grade2">X</h2>
+            <h2 class="grade3">X</h2>
+            <h2 class="grade4">X</h2>
+            <h2 class="grade5">X</h2>
+            <h2 class="grade6">X</h2>
+          </div>
+        </div>
+        <h1 class="final">
+          You have achieved <br />
+          <span class="bold">
+            CGPA <span class="cgpa">0.00</span
+            ><span class="short">out of 4.00 </span></span
+          >
+          (<span class="letter">X</span>)
+        </h1>
+        <h3 class="note">Note: Reload to submit again.</h3>
+      </div>
+    </div>
+    <h1 class="dev">This project is developed by <span>M. S. Miftah</span></h1>
+
+    <!-- script -->
+    <script src="./srcipt.js"></script>
+  </body>
+</html>

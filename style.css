@@ -1,0 +1,172 @@
+body {
+  background-color: r;
+  height: 100vh;
+  font-family: poppins, verdana;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: end;
+}
+body .container {
+  height: 75vh;
+  width: 70vw;
+  border: 3px solid black;
+  border-radius: 25px;
+  box-shadow: 0px 0px 20px black;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+body .container .contents {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+body .container .contents .wlcm {
+  font-size: 18px;
+  font-weight: 500;
+}
+body .container .contents .wlcm span {
+  font-size: 24px;
+  font-weight: 700;
+}
+body .container .contents .wlcm span .nurses {
+  background-image: linear-gradient(90deg, red, blue, green);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+body .container .contents form {
+  width: 80%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+body .container .contents form .heading {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 500;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 2px 5px;
+}
+body .container .contents form .heading span {
+  font-weight: 700;
+}
+body .container .contents form .data {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+body .container .contents form .data .subName {
+  margin-bottom: 5px;
+}
+body .container .contents form .data .subMark {
+  margin-bottom: 5px;
+}
+body .container .contents form .data .subMark input {
+  border-radius: 8px;
+  border: 1px solid black;
+  padding: 2px 5px;
+}
+body .container .contents form .data .subMark input::-webkit-outer-spin-button,
+body .container .contents form .data .subMark input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+body .container .contents form #note {
+  font-size: 10px;
+  font-weight: 500;
+  color: red;
+  margin: 0;
+}
+body .container .contents form button {
+  background-color: black;
+  border-radius: 15px;
+  padding: 10px 20px;
+  border: none;
+  color: white;
+  font-weight: 500;
+}
+body .container .contents form button:hover {
+  background-color: rgb(52, 231, 102);
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+}
+body .container .results {
+  visibility: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+body .container .results .heading {
+  background-image: linear-gradient(90deg, red, blue, green);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 20px 0 0;
+  font-size: 28px;
+}
+body .container .results .subHead {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0 0 10px;
+}
+body .container .results .data {
+  display: flex;
+  column-gap: 10px;
+}
+body .container .results .data .subName h2,
+body .container .results .data .letGrade h2 {
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0;
+}
+body .container .results .data .marks h2,
+body .container .results .data .numGrade h2 {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0;
+}
+body .container .results .data .subName .head,
+body .container .results .data .letGrade .head,
+body .container .results .data .marks .head,
+body .container .results .data .numGrade .head {
+  font-weight: 700;
+}
+body .container .results .final {
+  font-size: 20px;
+  font-weight: 500;
+  border: 2px solid black;
+  border-radius: 15px;
+  padding: 5px 20px;
+  margin: 25px 0 0;
+}
+body .container .results .final .short {
+  font-size: 12px;
+}
+body .container .results .final .bold,
+body .container .results .final .letter {
+  font-size: 24;
+  font-weight: 700;
+}
+body .container .results .note {
+  font-size: 10px;
+  font-weight: 500;
+  margin: 0;
+}
+body .dev {
+  font-size: 14px;
+  font-weight: 400;
+  margin: 0 0 20px;
+}
+body .dev span {
+  font-weight: 700;
+}
+
+/*# sourceMappingURL=style.css.map */
